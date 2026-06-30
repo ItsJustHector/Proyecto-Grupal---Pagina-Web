@@ -1,3 +1,4 @@
+ HEAD
 * {
     margin: 0;
     padding: 0;
@@ -121,4 +122,62 @@ body {
     padding: 20px;
     border-top: 4px solid #D4AF37;
     font-size: 14px;
+}
+/* TITULO PRINCIPAL */
+
+h1, .titulo {
+    font-size: 48px;
+    color: #D4AF37;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0 8px 0;
+    font-family: Georgia, serif;
+    text-shadow: 1px 2px 6px rgba(0,0,0,0.18);
+}
+
+/* SUBTITULO / SLOGAN */
+
+h2, .subtitulo {
+    font-size: 20px;
+    color: #8A2C80;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* PARRAFO DE BIENVENIDA */
+
+p.bienvenida, .parrafo-bienvenida {
+    font-size: 17px;
+    color: #8A2C80;
+    line-height: 1.8;
+    max-width: 680px;
+    margin: 24px auto;
+    text-align: center;
+    background-color: rgba(255,255,255,0.45);
+    border-left: 4px solid #D4AF37;
+    padding: 16px 24px;
+    border-radius: 6px;
+}
+
+/* FONDO DE LA PAGINA */
+
+body {
+    background: linear-gradient(135deg, #FFD1DC 0%, #f5b8cb 50%, #ffe0ec 100%);
+    min-height: 100vh;
+}
+
+/* RESALTADO DE "BEAUTY GLOW" EN EL TEXTO */
+
+.marca-resaltada {
+    color: #8A2C80;
+    font-weight: bold;
+    background-color: #D4AF37;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-style: normal;
+    letter-spacing: 0.5px;
 }
