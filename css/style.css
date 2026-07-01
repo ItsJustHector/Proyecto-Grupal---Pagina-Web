@@ -333,3 +333,19 @@ table tbody tr:hover {
     transform: scale(1.18);
     box-shadow: 0 6px 24px rgba(212,175,55,0.50);
 }
+.servicios{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.card{
+    width: 250px;
+    padding: 20px;
+    border: 2px solid #d8b4f8;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
