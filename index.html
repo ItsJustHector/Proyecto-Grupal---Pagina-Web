@@ -124,7 +124,38 @@
     <p>📷 Instagram: @beautyglow</p>
     <p>📘 Facebook: Beauty Glow</p>
     <p>📞 WhatsApp: (829) 000-0000</p>
-</footer>
+</footer> 
+
+        <!-- MODAL DE FELICITACIÓN -->
+        <div id="congrats-overlay" class="modal-overlay">
+            <div id="congrats-modal" class="modal-content">
+                <span class="modal-emoji">🎉</span>
+                <h1 class="modal-title">¡FELICIDADES!</h1>
+                <p class="modal-subtitle">MÓDULO COMPLETADO</p>
+                <p class="modal-text">Has finalizado exitosamente tu proyecto de Programación Web I.</p>
+                <p class="modal-text">Les insto a continuar capacitandose</p>
+                <p class="modal-text">Follow Social Networks - @fafranqueljose.</p>
+                <button id="continue-btn" class="modal-button">CONTINUAR</button>
+            </div>
+        </div>
+
+        <script>
+            // Espera a que todo el contenido del DOM esté cargado
+            document.addEventListener('DOMContentLoaded', () => {
+                // Selecciona los elementos del modal
+                const modalOverlay = document.getElementById('congrats-overlay');
+                const continueBtn = document.getElementById('continue-btn');
+
+                // Muestra el modal al cargar la página
+                modalOverlay.style.display = 'flex';
+
+                // Añade el evento de clic al botón "CONTINUAR"
+                continueBtn.addEventListener('click', () => {
+                    // Oculta el modal al hacer clic
+                    modalOverlay.style.display = 'none';
+                });
+            });
+        </script>
     </body>
 </html>
   

@@ -349,3 +349,89 @@ table tbody tr:hover {
     background: #fff;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+
+/* --- ESTILOS DEL MODAL DE FELICITACIÓN --- */
+
+/* Fondo oscuro semitransparente */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none; /* Oculto por defecto, controlado por JS */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que esté por encima de todo */
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+    font-family: 'Georgia', serif;
+    color: #333;
+    border: 2px solid #8A2C80;
+    animation: fadeInScale 0.5s ease-out forwards;
+}
+
+/* Animación de entrada */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal-emoji {
+    font-size: 48px;
+}
+
+.modal-title {
+    font-size: 32px;
+    color: #8A2C80;
+    margin: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.modal-subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.modal-text {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.modal-button {
+    background-color: #8A2C80;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.modal-button:hover {
+    background-color: #a03d96;
+    transform: scale(1.05);
+}
